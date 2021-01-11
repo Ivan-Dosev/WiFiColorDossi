@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC2C84F325ACCEF700458E2F /* WiFiColorDossiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C84F225ACCEF700458E2F /* WiFiColorDossiApp.swift */; };
+		CC2C84F525ACCEF700458E2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C84F425ACCEF700458E2F /* ContentView.swift */; };
+		CC2C84F725ACCEF800458E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2C84F625ACCEF800458E2F /* Assets.xcassets */; };
+		CC2C84FA25ACCEF800458E2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2C84F925ACCEF800458E2F /* Preview Assets.xcassets */; };
+		CC2C850525ACCEF800458E2F /* WiFiColorDossiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C850425ACCEF800458E2F /* WiFiColorDossiTests.swift */; };
+		CC2C851025ACCEF800458E2F /* WiFiColorDossiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C850F25ACCEF800458E2F /* WiFiColorDossiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC2C850125ACCEF800458E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC2C84E725ACCEF700458E2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC2C84EE25ACCEF700458E2F;
+			remoteInfo = WiFiColorDossi;
+		};
+		CC2C850C25ACCEF800458E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC2C84E725ACCEF700458E2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC2C84EE25ACCEF700458E2F;
+			remoteInfo = WiFiColorDossi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC2C84EF25ACCEF700458E2F /* WiFiColorDossi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiColorDossi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2C84F225ACCEF700458E2F /* WiFiColorDossiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiColorDossiApp.swift; sourceTree = "<group>"; };
+		CC2C84F425ACCEF700458E2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC2C84F625ACCEF800458E2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC2C84F925ACCEF800458E2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC2C84FB25ACCEF800458E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC2C850025ACCEF800458E2F /* WiFiColorDossiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiColorDossiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2C850425ACCEF800458E2F /* WiFiColorDossiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiColorDossiTests.swift; sourceTree = "<group>"; };
+		CC2C850625ACCEF800458E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC2C850B25ACCEF800458E2F /* WiFiColorDossiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiColorDossiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2C850F25ACCEF800458E2F /* WiFiColorDossiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiColorDossiUITests.swift; sourceTree = "<group>"; };
+		CC2C851125ACCEF800458E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC2C84EC25ACCEF700458E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2C84FD25ACCEF800458E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2C850825ACCEF800458E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC2C84E625ACCEF700458E2F = {
+			isa = PBXGroup;
+			children = (
+				CC2C84F125ACCEF700458E2F /* WiFiColorDossi */,
+				CC2C850325ACCEF800458E2F /* WiFiColorDossiTests */,
+				CC2C850E25ACCEF800458E2F /* WiFiColorDossiUITests */,
+				CC2C84F025ACCEF700458E2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC2C84F025ACCEF700458E2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC2C84EF25ACCEF700458E2F /* WiFiColorDossi.app */,
+				CC2C850025ACCEF800458E2F /* WiFiColorDossiTests.xctest */,
+				CC2C850B25ACCEF800458E2F /* WiFiColorDossiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC2C84F125ACCEF700458E2F /* WiFiColorDossi */ = {
+			isa = PBXGroup;
+			children = (
+				CC2C84F225ACCEF700458E2F /* WiFiColorDossiApp.swift */,
+				CC2C84F425ACCEF700458E2F /* ContentView.swift */,
+				CC2C84F625ACCEF800458E2F /* Assets.xcassets */,
+				CC2C84FB25ACCEF800458E2F /* Info.plist */,
+				CC2C84F825ACCEF800458E2F /* Preview Content */,
+			);
+			path = WiFiColorDossi;
+			sourceTree = "<group>";
+		};
+		CC2C84F825ACCEF800458E2F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CC2C84F925ACCEF800458E2F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC2C850325ACCEF800458E2F /* WiFiColorDossiTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC2C850425ACCEF800458E2F /* WiFiColorDossiTests.swift */,
+				CC2C850625ACCEF800458E2F /* Info.plist */,
+			);
+			path = WiFiColorDossiTests;
+			sourceTree = "<group>";
+		};
+		CC2C850E25ACCEF800458E2F /* WiFiColorDossiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC2C850F25ACCEF800458E2F /* WiFiColorDossiUITests.swift */,
+				CC2C851125ACCEF800458E2F /* Info.plist */,
+			);
+			path = WiFiColorDossiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC2C84EE25ACCEF700458E2F /* WiFiColorDossi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2C851425ACCEF800458E2F /* Build configuration list for PBXNativeTarget "WiFiColorDossi" */;
+			buildPhases = (
+				CC2C84EB25ACCEF700458E2F /* Sources */,
+				CC2C84EC25ACCEF700458E2F /* Frameworks */,
+				CC2C84ED25ACCEF700458E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiFiColorDossi;
+			productName = WiFiColorDossi;
+			productReference = CC2C84EF25ACCEF700458E2F /* WiFiColorDossi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC2C84FF25ACCEF800458E2F /* WiFiColorDossiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2C851725ACCEF800458E2F /* Build configuration list for PBXNativeTarget "WiFiColorDossiTests" */;
+			buildPhases = (
+				CC2C84FC25ACCEF800458E2F /* Sources */,
+				CC2C84FD25ACCEF800458E2F /* Frameworks */,
+				CC2C84FE25ACCEF800458E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC2C850225ACCEF800458E2F /* PBXTargetDependency */,
+			);
+			name = WiFiColorDossiTests;
+			productName = WiFiColorDossiTests;
+			productReference = CC2C850025ACCEF800458E2F /* WiFiColorDossiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC2C850A25ACCEF800458E2F /* WiFiColorDossiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2C851A25ACCEF800458E2F /* Build configuration list for PBXNativeTarget "WiFiColorDossiUITests" */;
+			buildPhases = (
+				CC2C850725ACCEF800458E2F /* Sources */,
+				CC2C850825ACCEF800458E2F /* Frameworks */,
+				CC2C850925ACCEF800458E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC2C850D25ACCEF800458E2F /* PBXTargetDependency */,
+			);
+			name = WiFiColorDossiUITests;
+			productName = WiFiColorDossiUITests;
+			productReference = CC2C850B25ACCEF800458E2F /* WiFiColorDossiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC2C84E725ACCEF700458E2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					CC2C84EE25ACCEF700458E2F = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CC2C84FF25ACCEF800458E2F = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CC2C84EE25ACCEF700458E2F;
+					};
+					CC2C850A25ACCEF800458E2F = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CC2C84EE25ACCEF700458E2F;
+					};
+				};
+			};
+			buildConfigurationList = CC2C84EA25ACCEF700458E2F /* Build configuration list for PBXProject "WiFiColorDossi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC2C84E625ACCEF700458E2F;
+			productRefGroup = CC2C84F025ACCEF700458E2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC2C84EE25ACCEF700458E2F /* WiFiColorDossi */,
+				CC2C84FF25ACCEF800458E2F /* WiFiColorDossiTests */,
+				CC2C850A25ACCEF800458E2F /* WiFiColorDossiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC2C84ED25ACCEF700458E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2C84FA25ACCEF800458E2F /* Preview Assets.xcassets in Resources */,
+				CC2C84F725ACCEF800458E2F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2C84FE25ACCEF800458E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2C850925ACCEF800458E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC2C84EB25ACCEF700458E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2C84F525ACCEF700458E2F /* ContentView.swift in Sources */,
+				CC2C84F325ACCEF700458E2F /* WiFiColorDossiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2C84FC25ACCEF800458E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2C850525ACCEF800458E2F /* WiFiColorDossiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2C850725ACCEF800458E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2C851025ACCEF800458E2F /* WiFiColorDossiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC2C850225ACCEF800458E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC2C84EE25ACCEF700458E2F /* WiFiColorDossi */;
+			targetProxy = CC2C850125ACCEF800458E2F /* PBXContainerItemProxy */;
+		};
+		CC2C850D25ACCEF800458E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC2C84EE25ACCEF700458E2F /* WiFiColorDossi */;
+			targetProxy = CC2C850C25ACCEF800458E2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CC2C851225ACCEF800458E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC2C851325ACCEF800458E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC2C851525ACCEF800458E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WiFiColorDossi/Preview Content\"";
+				DEVELOPMENT_TEAM = 2FYTR3E5Q9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WiFiColorDossi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivandosev.WiFiColorDossi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC2C851625ACCEF800458E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WiFiColorDossi/Preview Content\"";
+				DEVELOPMENT_TEAM = 2FYTR3E5Q9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WiFiColorDossi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivandosev.WiFiColorDossi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC2C851825ACCEF800458E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FYTR3E5Q9;
+				INFOPLIST_FILE = WiFiColorDossiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivandosev.WiFiColorDossiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFiColorDossi.app/WiFiColorDossi";
+			};
+			name = Debug;
+		};
+		CC2C851925ACCEF800458E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FYTR3E5Q9;
+				INFOPLIST_FILE = WiFiColorDossiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivandosev.WiFiColorDossiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFiColorDossi.app/WiFiColorDossi";
+			};
+			name = Release;
+		};
+		CC2C851B25ACCEF800458E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FYTR3E5Q9;
+				INFOPLIST_FILE = WiFiColorDossiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivandosev.WiFiColorDossiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiFiColorDossi;
+			};
+			name = Debug;
+		};
+		CC2C851C25ACCEF800458E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FYTR3E5Q9;
+				INFOPLIST_FILE = WiFiColorDossiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivandosev.WiFiColorDossiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiFiColorDossi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC2C84EA25ACCEF700458E2F /* Build configuration list for PBXProject "WiFiColorDossi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2C851225ACCEF800458E2F /* Debug */,
+				CC2C851325ACCEF800458E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC2C851425ACCEF800458E2F /* Build configuration list for PBXNativeTarget "WiFiColorDossi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2C851525ACCEF800458E2F /* Debug */,
+				CC2C851625ACCEF800458E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC2C851725ACCEF800458E2F /* Build configuration list for PBXNativeTarget "WiFiColorDossiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2C851825ACCEF800458E2F /* Debug */,
+				CC2C851925ACCEF800458E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC2C851A25ACCEF800458E2F /* Build configuration list for PBXNativeTarget "WiFiColorDossiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2C851B25ACCEF800458E2F /* Debug */,
+				CC2C851C25ACCEF800458E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC2C84E725ACCEF700458E2F /* Project object */;
+}
