@@ -19,14 +19,31 @@ extension ColorView : ColorServiceDelegate {
         OperationQueue.main.addOperation {
             
             let dataFromModel = try! JSONDecoder().decode(Model.self, from: dataModel)
-           
-            if !dataFromModel.peerID.isEmpty {
-                self.numberID = String(decoding: dataFromModel.peerID, as: UTF8.self)
             
-            }
-            if !dataFromModel.massige.isEmpty {
-                self.sendedMassage = String(decoding: dataFromModel.massige, as: UTF8.self)
-            }
+ 
+                if !dataFromModel.peerID.isEmpty {
+
+                    if dataFromModel.isSender {
+                        
+                        self.signingID = String(decoding: dataFromModel.peerID, as: UTF8.self)
+                        colorService.send(colorName: keyAgreenentPublic())
+                    }else {
+                        self.agreementID =  String(decoding: dataFromModel.peerID, as: UTF8.self)
+                    }
+                }
+
+                if !dataFromModel.massige.isEmpty {
+                    
+                    self.sendedMassage = String(decoding: dataFromModel.massige, as: UTF8.self)
+                    if dataFromModel.isSender {
+                              self.sendedMassage = String(decoding: dataFromModel.massige, as: UTF8.self)
+                              colorService.send(colorName: answerData())
+                    }else {
+                              self.sendedMassage = String(decoding: dataFromModel.massige, as: UTF8.self)
+                    }
+                }
+       
+            
 //            switch colorString {
 //            case "red":
 //                self.change(color: .red)
@@ -38,6 +55,6 @@ extension ColorView : ColorServiceDelegate {
         }
     }
     func change(color : Data) {
-        self.numberID = String(decoding: color, as: UTF8.self)
+//        self.numberID = String(decoding: color, as: UTF8.self)
     }
 }

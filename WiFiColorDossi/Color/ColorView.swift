@@ -14,7 +14,8 @@ struct ColorView: View {
     
     
     @State var text           : String = ""
-    @State var numberID       : String = ""
+    @State var signingID       : String = ""
+    @State var agreementID    : String = ""
     @State var sendedMassage  : String = ""
 //    @State var privateID_Key : Curve25519.Signing.PrivateKey = Curve25519.Signing.PrivateKey()
     
@@ -27,6 +28,17 @@ struct ColorView: View {
         }else{
               let kay = Curve25519.Signing.PrivateKey()
                         UserDefaults.standard.set( kay.rawRepresentation, forKey: "PrivateKey")
+           return kay
+        }
+    }
+    var privateAgreement_Key : Curve25519.KeyAgreement.PrivateKey {
+        if let data = UserDefaults.standard.data(forKey: "AgreementKey") {
+            
+            return try! Curve25519.KeyAgreement.PrivateKey(rawRepresentation: data)
+            
+        }else{
+            let kay = Curve25519.KeyAgreement.PrivateKey()
+                        UserDefaults.standard.set( kay.rawRepresentation, forKey: "AgreementKey")
            return kay
         }
     }
@@ -45,7 +57,7 @@ struct ColorView: View {
 //                self.change(color: .red)
 //                let model = Model(peerID: "peerID is 9900770011".data(using: .utf8)!, massige: Data())
 //                let madelData =  try JSONEncoder().encode(model)
-                colorService.send(colorName: aloID())
+                colorService.send(colorName: senderSigningPublic())
             }) {
                 Text("Send Public Key")
                     .padding()
@@ -53,15 +65,21 @@ struct ColorView: View {
             
             Button(action: {
 //                self.change(color: .yellow)
-                colorService.send(colorName: aloData())
+                colorService.send(colorName: senderData())
             }) {
                 Text("Send Data")
                     .padding()
             }
             
             Section {
-                Text("Public Kay: \(numberID)")
-                    .padding()
+                VStack {
+                    Text("signingID: \(signingID)")
+                        .padding()
+                    Divider()
+                    Text("agreementID: \(agreementID)")
+                        .padding()
+                }
+
             }
             Section {
                 Text("recive > : \(sendedMassage)")
@@ -73,14 +91,25 @@ struct ColorView: View {
             colorService.delegate = self
         }
     }
-    func aloID() -> Data {
-        let model = Model(peerID: privateID_Key.publicKey.rawRepresentation, massige: Data())
+    func senderSigningPublic() -> Data {
+        let model = Model(peerID: privateID_Key.publicKey.rawRepresentation, massige: Data(),isSender: true)
+        let modelData = try! JSONEncoder().encode(model)
+       return modelData
+    }
+    func keyAgreenentPublic() -> Data {
+        let model = Model(peerID: privateAgreement_Key.publicKey.rawRepresentation, massige: Data(),isSender: false)
         let modelData = try! JSONEncoder().encode(model)
        return modelData
     }
     
-    func aloData() -> Data {
-        let model = Model(peerID: Data(), massige: "data is arda ".data(using: .utf8)!)
+    func senderData() -> Data {
+        let model = Model(peerID: Data(), massige: "data is arda ".data(using: .utf8)!, isSender: true)
+        let modelData = try! JSONEncoder().encode(model)
+       return modelData
+    }
+    
+    func answerData() -> Data {
+        let model = Model(peerID: Data(), massige: "Ок".data(using: .utf8)!, isSender: false)
         let modelData = try! JSONEncoder().encode(model)
        return modelData
     }
@@ -94,6 +123,7 @@ struct ColorView_Previews: PreviewProvider {
 
  struct Model   :  Codable {
     
-    var peerID  : Data
-    var massige : Data
+    var peerID   : Data
+    var massige  : Data
+    var isSender : Bool
 }

@@ -16,6 +16,7 @@
 		CC2C852225ACCFA700458E2F /* ColorSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C852125ACCFA700458E2F /* ColorSwitch.swift */; };
 		CC2C852A25ACCFD500458E2F /* ColorCervice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C852925ACCFD500458E2F /* ColorCervice.swift */; };
 		CC2C852F25ACD0ED00458E2F /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C852E25ACD0ED00458E2F /* ColorView.swift */; };
+		CC2C853725AD8DAD00458E2F /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C853625AD8DAD00458E2F /* Crypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CC2C852125ACCFA700458E2F /* ColorSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitch.swift; sourceTree = "<group>"; };
 		CC2C852925ACCFD500458E2F /* ColorCervice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCervice.swift; sourceTree = "<group>"; };
 		CC2C852E25ACD0ED00458E2F /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		CC2C853625AD8DAD00458E2F /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				CC2C852E25ACD0ED00458E2F /* ColorView.swift */,
 				CC2C852125ACCFA700458E2F /* ColorSwitch.swift */,
 				CC2C852925ACCFD500458E2F /* ColorCervice.swift */,
+				CC2C853625AD8DAD00458E2F /* Crypto.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2C853725AD8DAD00458E2F /* Crypto.swift in Sources */,
 				CC2C84F525ACCEF700458E2F /* ContentView.swift in Sources */,
 				CC2C852A25ACCFD500458E2F /* ColorCervice.swift in Sources */,
 				CC2C852225ACCFA700458E2F /* ColorSwitch.swift in Sources */,
