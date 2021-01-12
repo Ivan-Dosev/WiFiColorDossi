@@ -13,6 +13,9 @@
 		CC2C84FA25ACCEF800458E2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2C84F925ACCEF800458E2F /* Preview Assets.xcassets */; };
 		CC2C850525ACCEF800458E2F /* WiFiColorDossiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C850425ACCEF800458E2F /* WiFiColorDossiTests.swift */; };
 		CC2C851025ACCEF800458E2F /* WiFiColorDossiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C850F25ACCEF800458E2F /* WiFiColorDossiUITests.swift */; };
+		CC2C852225ACCFA700458E2F /* ColorSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C852125ACCFA700458E2F /* ColorSwitch.swift */; };
+		CC2C852A25ACCFD500458E2F /* ColorCervice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C852925ACCFD500458E2F /* ColorCervice.swift */; };
+		CC2C852F25ACD0ED00458E2F /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C852E25ACD0ED00458E2F /* ColorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		CC2C850B25ACCEF800458E2F /* WiFiColorDossiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiColorDossiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2C850F25ACCEF800458E2F /* WiFiColorDossiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiColorDossiUITests.swift; sourceTree = "<group>"; };
 		CC2C851125ACCEF800458E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC2C852125ACCFA700458E2F /* ColorSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitch.swift; sourceTree = "<group>"; };
+		CC2C852925ACCFD500458E2F /* ColorCervice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCervice.swift; sourceTree = "<group>"; };
+		CC2C852E25ACD0ED00458E2F /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 			children = (
 				CC2C84F225ACCEF700458E2F /* WiFiColorDossiApp.swift */,
 				CC2C84F425ACCEF700458E2F /* ContentView.swift */,
+				CC2C852025ACCF8700458E2F /* Color */,
 				CC2C84F625ACCEF800458E2F /* Assets.xcassets */,
 				CC2C84FB25ACCEF800458E2F /* Info.plist */,
 				CC2C84F825ACCEF800458E2F /* Preview Content */,
@@ -128,6 +135,16 @@
 				CC2C851125ACCEF800458E2F /* Info.plist */,
 			);
 			path = WiFiColorDossiUITests;
+			sourceTree = "<group>";
+		};
+		CC2C852025ACCF8700458E2F /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				CC2C852E25ACD0ED00458E2F /* ColorView.swift */,
+				CC2C852125ACCFA700458E2F /* ColorSwitch.swift */,
+				CC2C852925ACCFD500458E2F /* ColorCervice.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2C84F525ACCEF700458E2F /* ContentView.swift in Sources */,
+				CC2C852A25ACCFD500458E2F /* ColorCervice.swift in Sources */,
+				CC2C852225ACCFA700458E2F /* ColorSwitch.swift in Sources */,
 				CC2C84F325ACCEF700458E2F /* WiFiColorDossiApp.swift in Sources */,
+				CC2C852F25ACD0ED00458E2F /* ColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
