@@ -58,6 +58,7 @@ class ColorService : NSObject, ObservableObject {
 
         if session.connectedPeers.count > 0 {
             do {
+//                try self.session.send( colorName , toPeers: session.connectedPeers, with: .reliable)
                 try self.session.send( colorName , toPeers: session.connectedPeers, with: .reliable)
             }
             catch  {
@@ -66,7 +67,9 @@ class ColorService : NSObject, ObservableObject {
     }
     
     func invitePeer(_ peerID: MCPeerID) {
+      
         serviceBrowser.invitePeer( peerID, to: self.session, withContext: nil, timeout: 10)
+
     }
 
 
@@ -108,7 +111,7 @@ extension ColorService : MCNearbyServiceBrowserDelegate {
 extension ColorService : MCSessionDelegate {
 
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
-
+       
 //        self.delegate?.connectedDevicesChanged(manager: self, connectedDevices:
 //            session.connectedPeers.map{$0.displayName})
     }
@@ -118,6 +121,7 @@ extension ColorService : MCSessionDelegate {
 //        let str = String(data: data, encoding: .utf8)!
 //        self.delegate?.colorChanged(manager: self, colorString: str)
           self.delegate?.colorChanged(manager: self, dataModel: data)
+
     }
 
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {}
