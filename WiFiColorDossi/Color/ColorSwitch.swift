@@ -37,7 +37,7 @@ extension ColorView : ColorServiceDelegate {
                     self.sendedMassage = String(decoding: dataFromModel.massige, as: UTF8.self)
                     if dataFromModel.isSender {
                               self.sendedMassage = String(decoding: dataFromModel.massige, as: UTF8.self)
-                              colorService.send(colorName: answerData())
+//                              colorService.send(colorName: answerData())
                     }else {
                               self.sendedMassage = String(decoding: dataFromModel.massige, as: UTF8.self)
                     }

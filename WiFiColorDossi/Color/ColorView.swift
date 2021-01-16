@@ -12,7 +12,8 @@ struct ColorView: View {
     
     @ObservedObject var colorService = ColorService()
     
-    
+    @State var peerText       : String = ""
+    @State var isOn           : Bool = false
     @State var text           : String = ""
     @State var signingID       : String = ""
     @State var agreementID    : String = ""
@@ -45,7 +46,17 @@ struct ColorView: View {
     
     var body: some View {
         VStack {
-        
+            Text("\(peerText)")
+                .foregroundColor(.red)
+            ForEach(colorService.peers, id:\.self) { peer in
+                Text(peer.displayName)
+                    .padding()
+                    .padding()
+                    .onTapGesture {
+                        self.peerText = String(peer.displayName)
+                        colorService.invitePeer(peer)
+                    }
+            }
             VStack {
                 Text("\(text)")
                     .foregroundColor(.red)
@@ -54,9 +65,8 @@ struct ColorView: View {
             .padding()
             
             Button(action: {
-//                self.change(color: .red)
-//                let model = Model(peerID: "peerID is 9900770011".data(using: .utf8)!, massige: Data())
-//                let madelData =  try JSONEncoder().encode(model)
+                self.signingID    = ""
+                self.agreementID  = ""
                 colorService.send(colorName: senderSigningPublic())
             }) {
                 Text("Send Public Key")
@@ -83,6 +93,9 @@ struct ColorView: View {
             }
             Section {
                 Text("recive > : \(sendedMassage)")
+                    .onTapGesture {
+                        sendedMassage = ""
+                    }
                     .padding()
             }
 

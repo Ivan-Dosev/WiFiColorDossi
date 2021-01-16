@@ -19,6 +19,9 @@ class ColorService : NSObject, ObservableObject {
 
     // Service type must be a unique string, at most 15 characters long
     // and can contain only ASCII lowercase letters, numbers and hyphens.
+    
+    @Published var peers: [MCPeerID] = []
+    
     private let ColorServiceType = "ex"
 
     private let myPeerId = MCPeerID(displayName: UIDevice.current.name)
@@ -58,11 +61,14 @@ class ColorService : NSObject, ObservableObject {
                 try self.session.send( colorName , toPeers: session.connectedPeers, with: .reliable)
             }
             catch  {
-
             }
         }
-
     }
+    
+    func invitePeer(_ peerID: MCPeerID) {
+        serviceBrowser.invitePeer( peerID, to: self.session, withContext: nil, timeout: 10)
+    }
+
 
 }
 
@@ -82,10 +88,20 @@ extension ColorService : MCNearbyServiceBrowserDelegate {
 
     func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
        
-        browser.invitePeer(peerID, to: self.session, withContext: nil, timeout: 10)
+//        browser.invitePeer(peerID, to: self.session, withContext: nil, timeout: 10)
+//        invitePeer(peerID)
+        
+        if !peers.contains(peerID) {
+            peers.append(peerID)
+        }
+        
+        
     }
 
-    func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {}
+    func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
+        guard  let index = peers.firstIndex(of: peerID) else { return }
+        peers.remove(at: index)
+    }
 
 }
 
@@ -93,8 +109,8 @@ extension ColorService : MCSessionDelegate {
 
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
 
-        self.delegate?.connectedDevicesChanged(manager: self, connectedDevices:
-            session.connectedPeers.map{$0.displayName})
+//        self.delegate?.connectedDevicesChanged(manager: self, connectedDevices:
+//            session.connectedPeers.map{$0.displayName})
     }
 
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
